@@ -1,0 +1,19 @@
+# Footage and rendered output stay local.
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Model weights are downloaded, not committed.
+*.pt
+*.pth
+
+# SiamMask's code is cloned here, not vendored - see siammask.py.
+third_party/
+
+# Run artefacts
+runs/
+*.csv
+*.log
+__pycache__/
+*.pyc

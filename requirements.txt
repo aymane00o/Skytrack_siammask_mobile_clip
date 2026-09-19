@@ -1,0 +1,7 @@
+opencv-contrib-python>=4.8
+numpy>=1.24
+torch>=2.0
+
+# SiamMask's own code is cloned, not vendored (see siammask.py):
+#   git clone https://github.com/foolwood/SiamMask third_party/SiamMask
+# and its DAVIS weights, SiamMask_DAVIS.pth, go next to siamtrack.py.
