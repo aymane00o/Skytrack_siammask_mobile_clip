@@ -123,6 +123,14 @@ then put `SiamMask_DAVIS.pth` (from that project's releases) next to
 | speed on these clips | 8–13 fps | 5–6 fps |
 | best for | a close target you want cut out precisely | anything that has to survive being lost |
 
+## The four-minute run and the technical review
+
+* [`delivery/REPORT.md`](delivery/REPORT.md) — the whole car clip, 0:10 to 4:00,
+  tracked two ways (SiamMask alone, and with the detector-based recovery) with the
+  speed, coverage and an accuracy audit by eye.
+* [`presentation/`](presentation/README.md) — a 14-slide technical review comparing
+  YOLO26 + ByteTrack with SiamMask, built from those measurements.
+
 ## Files
 
 ```
@@ -134,6 +142,9 @@ overlay.py         brackets, labels, trail, arrow, inset, mask
 bench_followers.py the measurements in this README
 make_figures.py    a run's telemetry drawn as an SVG
 make_clip_svg.py   real frames of a run, animated, as an SVG
+report_run.py      coverage, continuity and an audit sheet for one run
+delivery/          the four-minute run: report, telemetry, audit frames
+presentation/      the technical review deck
 ```
 
 `bytetrack.py`, `reid.py` and `detector.py` are here because the shared tracking

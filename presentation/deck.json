@@ -1,0 +1,17 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-09-23T19:00:00Z"},
+  "title": "YOLO26+ByteTrack vs SiamMask",
+  "order": ["cover", "agenda", "context", "arch-yolo", "arch-siam", "arch-compare", "capabilities", "bench-drone", "bench-car", "accuracy-reality", "decision-guide", "hybrid", "demos", "closing"],
+  "sections": {
+    "intro": {"description": "Two tracking pipelines for Sky Tracker, and why this deck exists", "start": "cover"},
+    "architecture": {"description": "How each pipeline is built, piece by piece", "start": "arch-yolo"},
+    "measured": {"description": "What was actually measured on real footage, on a CPU", "start": "bench-drone"},
+    "guidance": {"description": "Which one to use, and the hybrid that combines both", "start": "decision-guide"},
+    "demo": {"description": "Short output clips from both algorithms, on both test clips", "start": "demos"}
+  },
+  "faces": {
+    "ibm-plex-sans": {"family": "IBM Plex Sans", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"},
+    "jetbrains-mono": {"family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"}
+  }
+}

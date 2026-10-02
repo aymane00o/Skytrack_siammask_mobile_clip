@@ -1,0 +1,42 @@
+<section id="bench-drone" data-section="measured" data-transition="fade" style="background:#10161A; color:#E8ECEA; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+  <div style="display:flex; flex-direction:column; gap:8px">
+    <p style="font-family:'JetBrains Mono', monospace; font-size:24px; color:#8FA0A0; letter-spacing:1px">MEASURED — DRONE CLIP, 300 FRAMES</p>
+    <h2 style="font-size:60px; font-weight:700; letter-spacing:-1px">A lone aircraft against open sky</h2>
+  </div>
+  <div style="display:flex; gap:32px; flex:1">
+    <div style="flex:1; display:flex; flex-direction:column; gap:28px; background:#1A2328; border:1px solid #4C8EFF; border-radius:24px; padding:48px">
+      <p style="font-size:30px; font-weight:600; color:#8FC0FF">YOLO26 + ByteTrack</p>
+      <div style="display:flex; gap:40px">
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <p style="font-size:80px; font-weight:700; font-family:'JetBrains Mono', monospace; color:#E8ECEA">4.7</p>
+          <p style="font-size:24px; color:#8FA0A0">frames / second</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <p style="font-size:80px; font-weight:700; font-family:'JetBrains Mono', monospace; color:#38D68C">94%</p>
+          <p style="font-size:24px; color:#8FA0A0">frames held<br>(281 / 300)</p>
+        </div>
+      </div>
+      <hr style="border-top:1px solid #2A363D">
+      <p style="font-size:26px; color:#BFC9C7">1 re-lock · starts at frame 60, from the mat, <b>through takeoff</b></p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:28px; background:#1A2328; border:1px solid #F2924B; border-radius:24px; padding:48px">
+      <p style="font-size:30px; font-weight:600; color:#F9C296">SiamMask</p>
+      <div style="display:flex; gap:40px">
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <p style="font-size:80px; font-weight:700; font-family:'JetBrains Mono', monospace; color:#E8ECEA">7.9</p>
+          <p style="font-size:24px; color:#8FA0A0">frames / second</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <p style="font-size:80px; font-weight:700; font-family:'JetBrains Mono', monospace; color:#38D68C">100%</p>
+          <p style="font-size:24px; color:#8FA0A0">frames held<br>(300 / 300)</p>
+        </div>
+      </div>
+      <hr style="border-top:1px solid #2A363D">
+      <p style="font-size:26px; color:#BFC9C7">0 re-locks needed · starts at frame 230, <b>already airborne</b></p>
+    </div>
+  </div>
+  <div style="display:flex; gap:16px; align-items:center; background:#1A2328; border-radius:16px; padding:28px 40px">
+    <x-icon name="Warning" style="color:#F2924B; width:28px; height:28px"></x-icon>
+    <p style="font-size:25px; color:#BFC9C7">Not a fair race: SiamMask's window starts once the aircraft is already flying. YOLO26+ByteTrack's starts on the ground, through the hardest 4 seconds of the whole clip — and still holds it 94% of the time.</p>
+  </div>
+</section>

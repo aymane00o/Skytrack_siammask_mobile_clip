@@ -1,0 +1,28 @@
+<section id="closing" data-transition="fade" style="background:#10161A; color:#E8ECEA; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; justify-content:space-between">
+  <h2 style="font-size:60px; font-weight:700; letter-spacing:-1px">Two repositories, ready to run</h2>
+  <div style="display:flex; gap:32px">
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#1A2328; border:1px solid #4C8EFF; border-radius:20px; padding:40px">
+      <p style="font-size:28px; font-weight:600; color:#8FC0FF">Skytrack_yolo26_mobile_clip_bytrack</p>
+      <p style="font-size:24px; color:#BFC9C7; line-height:1.5">Detector + identity + memory, tuned for tall phone clips.</p>
+      <div style="background:#0D1215; border-radius:10px; padding:20px 24px">
+        <p style="font-family:'JetBrains Mono', monospace; font-size:22px; color:#8FC0FF">python skytrack.py clip.mp4 --target car</p>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#1A2328; border:1px solid #F2924B; border-radius:20px; padding:40px">
+      <p style="font-size:28px; font-weight:600; color:#F9C296">Skytrack_siammask_mobile_clip</p>
+      <p style="font-size:24px; color:#BFC9C7; line-height:1.5">SiamMask alone, and paired with the recovery pipeline above.</p>
+      <div style="background:#0D1215; border-radius:10px; padding:20px 24px">
+        <p style="font-family:'JetBrains Mono', monospace; font-size:22px; color:#F9C296">python siamtrack.py clip.mp4</p>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:20px; background:#1A2328; border-radius:20px; padding:40px">
+    <p style="font-size:30px; font-weight:600">Three lines</p>
+    <div style="display:flex; gap:40px">
+      <p style="font-size:26px; color:#BFC9C7; flex:1">A detector recovers a target it never expected to lose. A siamese tracker follows one it was shown, precisely, until it looks away.</p>
+      <p style="font-size:26px; color:#BFC9C7; flex:1">Coverage numbers alone hid that difference — the audited frames did not.</p>
+      <p style="font-size:26px; color:#BFC9C7; flex:1">Pick the one that matches what your footage actually does to the target.</p>
+    </div>
+  </div>
+  <p style="font-family:'JetBrains Mono', monospace; font-size:24px; color:#5C6B67">skytrack / technical review — measured on a CPU, no GPU</p>
+</section>

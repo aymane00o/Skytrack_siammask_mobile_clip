@@ -1,0 +1,45 @@
+<section id="capabilities" data-transition="fade" style="background:#F5F6F2; color:#1B2422; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+  <h2 style="font-size:60px; font-weight:700; letter-spacing:-1px">What each is actually built for</h2>
+  <table style="font-family:'IBM Plex Sans', Arial, sans-serif; font-size:27px; color:#1B2422">
+    <tr style="background:#1B2422">
+      <th style="width:32%; color:#F5F6F2; text-align:left; padding:22px 28px">Property</th>
+      <th style="width:34%; color:#8FC0FF; text-align:left; padding:22px 28px">YOLO26 + ByteTrack</th>
+      <th style="width:34%; color:#F9C296; text-align:left; padding:22px 28px">SiamMask</th>
+    </tr>
+    <tr style="background:#FFFFFF">
+      <td style="padding:22px 28px; color:#5C6B67">Knows the object's class</td>
+      <td style="padding:22px 28px">Yes — COCO classes: car, truck, airplane, bird…</td>
+      <td style="padding:22px 28px">No — only what it looked like when picked</td>
+    </tr>
+    <tr style="background:#EFF1EE">
+      <td style="padding:22px 28px; color:#5C6B67">Finds the target after a full loss</td>
+      <td style="padding:22px 28px">Yes — detector + identity + memory</td>
+      <td style="padding:22px 28px">No, alone. Yes, paired with a detector</td>
+    </tr>
+    <tr style="background:#FFFFFF">
+      <td style="padding:22px 28px; color:#5C6B67">Output per frame</td>
+      <td style="padding:22px 28px">Box, track ID, speed, trail, prediction arrow</td>
+      <td style="padding:22px 28px">Pixel mask — the target's real outline</td>
+    </tr>
+    <tr style="background:#EFF1EE">
+      <td style="padding:22px 28px; color:#5C6B67">Per-frame cost</td>
+      <td style="padding:22px 28px">One CNN detector pass, whole frame, + matching</td>
+      <td style="padding:22px 28px">One siamese pass, one small search window</td>
+    </tr>
+    <tr style="background:#FFFFFF">
+      <td style="padding:22px 28px; color:#5C6B67">Needs a trained class list</td>
+      <td style="padding:22px 28px">Yes — COCO, or fine-tune for others</td>
+      <td style="padding:22px 28px">No — works on any object shown once</td>
+    </tr>
+    <tr style="background:#EFF1EE">
+      <td style="padding:22px 28px; color:#5C6B67">Weights</td>
+      <td style="padding:22px 28px">yolo26m.pt — 44 MB, downloaded on first use</td>
+      <td style="padding:22px 28px">ResNet-50 DAVIS — 106 MB, fetched by hand</td>
+    </tr>
+    <tr style="background:#FFFFFF">
+      <td style="padding:22px 28px; color:#5C6B67">Setup</td>
+      <td style="padding:22px 28px"><span style="font-family:'JetBrains Mono', monospace; font-size:24px">pip install ultralytics</span></td>
+      <td style="padding:22px 28px">clone the SiamMask repo, place weights by hand</td>
+    </tr>
+  </table>
+</section>

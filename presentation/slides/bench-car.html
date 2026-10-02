@@ -1,0 +1,42 @@
+<section id="bench-car" data-transition="fade" style="background:#10161A; color:#E8ECEA; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+  <div style="display:flex; flex-direction:column; gap:8px">
+    <p style="font-family:'JetBrains Mono', monospace; font-size:24px; color:#8FA0A0; letter-spacing:1px">MEASURED — CAR CLIP, 300 FRAMES, BEFORE THE HARD CUT</p>
+    <h2 style="font-size:60px; font-weight:700; letter-spacing:-1px">Traffic, and a swinging camera</h2>
+  </div>
+  <div style="display:flex; gap:32px; flex:1">
+    <div style="flex:1; display:flex; flex-direction:column; gap:28px; background:#1A2328; border:1px solid #4C8EFF; border-radius:24px; padding:48px">
+      <p style="font-size:30px; font-weight:600; color:#8FC0FF">YOLO26 + ByteTrack</p>
+      <div style="display:flex; gap:40px">
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <p style="font-size:80px; font-weight:700; font-family:'JetBrains Mono', monospace; color:#E8ECEA">6.2</p>
+          <p style="font-size:24px; color:#8FA0A0">frames / second</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <p style="font-size:80px; font-weight:700; font-family:'JetBrains Mono', monospace; color:#38D68C">85%</p>
+          <p style="font-size:24px; color:#8FA0A0">frames held<br>(254 / 300)</p>
+        </div>
+      </div>
+      <hr style="border-top:1px solid #2A363D">
+      <p style="font-size:26px; color:#BFC9C7">1 re-lock — <b>lost the car once, took it back</b></p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:28px; background:#1A2328; border:1px solid #F2924B; border-radius:24px; padding:48px">
+      <p style="font-size:30px; font-weight:600; color:#F9C296">SiamMask</p>
+      <div style="display:flex; gap:40px">
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <p style="font-size:80px; font-weight:700; font-family:'JetBrains Mono', monospace; color:#E8ECEA">13.2</p>
+          <p style="font-size:24px; color:#8FA0A0">frames / second</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <p style="font-size:80px; font-weight:700; font-family:'JetBrains Mono', monospace; color:#E8615D">76%</p>
+          <p style="font-size:24px; color:#8FA0A0">frames held<br>(229 / 300)</p>
+        </div>
+      </div>
+      <hr style="border-top:1px solid #2A363D">
+      <p style="font-size:26px; color:#BFC9C7">0 re-locks — <b>lost the car once, never took it back</b></p>
+    </div>
+  </div>
+  <div style="display:flex; gap:16px; align-items:center; background:#1A2328; border-radius:16px; padding:28px 40px">
+    <x-icon name="Lightbulb" style="color:#38D68C; width:28px; height:28px"></x-icon>
+    <p style="font-size:25px; color:#BFC9C7">Same moment breaks both trackers — the helicopter's camera swings around frame 528. YOLO26+ByteTrack gets the car back. SiamMask, twice as fast per frame, is done for the rest of the clip. This is the gap the next slide follows for the full four minutes.</p>
+  </div>
+</section>

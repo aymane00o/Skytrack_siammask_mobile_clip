@@ -1,0 +1,36 @@
+<section id="arch-siam" data-transition="fade" style="background:#F5F6F2; color:#1B2422; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+  <div style="display:flex; flex-direction:column; gap:8px">
+    <p style="font-family:'JetBrains Mono', monospace; font-size:24px; color:#F2924B; letter-spacing:1px">PIPELINE B — TEMPLATE-DRIVEN</p>
+    <h2 style="font-size:60px; font-weight:700; letter-spacing:-1px">SiamMask</h2>
+    <p style="font-size:28px; color:#5C6B67">One template, set once. Nothing else in the frame is ever examined.</p>
+  </div>
+  <div style="display:flex; align-items:stretch; gap:12px">
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#FFFFFF; border:2px solid #F2924B; border-radius:16px; padding:32px; justify-content:space-between">
+      <x-icon name="Star" style="color:#F2924B; width:36px; height:36px"></x-icon>
+      <h3 style="font-size:28px; font-weight:600">Template, at pick time</h3>
+      <p style="font-size:22px; color:#5C6B67; line-height:1.35">The box you draw becomes a fixed appearance template — a ResNet-50 embedding of the target, taken once.</p>
+    </div>
+    <x-shape kind="arrow-right" style="background:#F2924B; width:44px; height:22px; align-self:center; flex:none"></x-shape>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#FFFFFF; border:1px solid #E1E5E2; border-radius:16px; padding:32px; justify-content:space-between">
+      <x-icon name="Search" style="color:#1B2422; width:36px; height:36px"></x-icon>
+      <h3 style="font-size:28px; font-weight:600">Local search window</h3>
+      <p style="font-size:22px; color:#5C6B67; line-height:1.35">Each frame, only a 255px window around where the target was last seen is searched — never the whole image.</p>
+    </div>
+    <x-shape kind="arrow-right" style="background:#F2924B; width:44px; height:22px; align-self:center; flex:none"></x-shape>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#FFFFFF; border:1px solid #E1E5E2; border-radius:16px; padding:32px; justify-content:space-between">
+      <x-icon name="Chart" style="color:#1B2422; width:36px; height:36px"></x-icon>
+      <h3 style="font-size:28px; font-weight:600">Siamese match + mask</h3>
+      <p style="font-size:22px; color:#5C6B67; line-height:1.35">The window position that best matches the template wins, and a pixel mask of the object is returned with it.</p>
+    </div>
+  </div>
+  <div style="display:flex; gap:24px">
+    <div style="flex:1; display:flex; gap:16px; align-items:center; background:#1B2422; border-radius:16px; padding:28px 40px">
+      <p style="font-size:24px; color:#38D68C; font-family:'JetBrains Mono', monospace">OUTPUT</p>
+      <p style="font-size:26px; color:#F5F6F2">pixel mask · real outline · box</p>
+    </div>
+    <div style="flex:1; display:flex; gap:16px; align-items:center; background:#3A241B; border-radius:16px; padding:28px 40px">
+      <x-icon name="Warning" style="color:#F2924B; width:28px; height:28px"></x-icon>
+      <p style="font-size:26px; color:#F5DFCC">No detector, no identity, no memory — nothing here knows what a car <i>is</i></p>
+    </div>
+  </div>
+</section>

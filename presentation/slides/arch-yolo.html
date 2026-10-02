@@ -1,0 +1,36 @@
+<section id="arch-yolo" data-transition="fade" style="background:#F5F6F2; color:#1B2422; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+  <div style="display:flex; flex-direction:column; gap:8px">
+    <p style="font-family:'JetBrains Mono', monospace; font-size:24px; color:#4C8EFF; letter-spacing:1px">PIPELINE A — DETECTOR-DRIVEN</p>
+    <h2 style="font-size:60px; font-weight:700; letter-spacing:-1px">YOLO26 + ByteTrack</h2>
+    <p style="font-size:28px; color:#5C6B67">Every frame is re-examined. Identity is inferred, not assumed.</p>
+  </div>
+  <div style="display:flex; align-items:stretch; gap:12px; flex:1">
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#FFFFFF; border:2px solid #4C8EFF; border-radius:16px; padding:32px; justify-content:space-between">
+      <x-icon name="Search" style="color:#4C8EFF; width:36px; height:36px"></x-icon>
+      <h3 style="font-size:28px; font-weight:600">YOLO26</h3>
+      <p style="font-size:22px; color:#5C6B67; line-height:1.35">Detector. Finds every car, truck, aircraft or bird in the frame — from scratch, every pass.</p>
+    </div>
+    <x-shape kind="arrow-right" style="background:#4C8EFF; width:44px; height:22px; align-self:center; flex:none"></x-shape>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#FFFFFF; border:1px solid #E1E5E2; border-radius:16px; padding:32px; justify-content:space-between">
+      <x-icon name="Activity" style="color:#1B2422; width:36px; height:36px"></x-icon>
+      <h3 style="font-size:28px; font-weight:600">ByteTrack</h3>
+      <p style="font-size:22px; color:#5C6B67; line-height:1.35">Kalman motion + Hungarian matching. Gives each detection an identity, and keeps it through the frames the detector is unsure about.</p>
+    </div>
+    <x-shape kind="arrow-right" style="background:#4C8EFF; width:44px; height:22px; align-self:center; flex:none"></x-shape>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#FFFFFF; border:1px solid #E1E5E2; border-radius:16px; padding:32px; justify-content:space-between">
+      <x-icon name="Lock" style="color:#1B2422; width:36px; height:36px"></x-icon>
+      <h3 style="font-size:28px; font-weight:600">Target memory</h3>
+      <p style="font-size:22px; color:#5C6B67; line-height:1.35">A layout fingerprint of the picked target. Recognises it again after a gap, and refuses look-alikes that lead by too little.</p>
+    </div>
+    <x-shape kind="arrow-right" style="background:#4C8EFF; width:44px; height:22px; align-self:center; flex:none"></x-shape>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#FFFFFF; border:1px solid #E1E5E2; border-radius:16px; padding:32px; justify-content:space-between">
+      <x-icon name="Lightning" style="color:#1B2422; width:36px; height:36px"></x-icon>
+      <h3 style="font-size:28px; font-weight:600">CSRT follower</h3>
+      <p style="font-size:22px; color:#5C6B67; line-height:1.35">Correlation tracker. Carries the box between detection passes — the fast, cheap part of the loop.</p>
+    </div>
+  </div>
+  <div style="display:flex; gap:16px; align-items:center; background:#1B2422; border-radius:16px; padding:28px 40px">
+    <p style="font-size:24px; color:#38D68C; font-family:'JetBrains Mono', monospace">OUTPUT</p>
+    <p style="font-size:26px; color:#F5F6F2">box · track ID · position &amp; speed · motion trail · prediction arrow</p>
+  </div>
+</section>

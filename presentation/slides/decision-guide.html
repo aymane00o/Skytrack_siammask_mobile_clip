@@ -1,0 +1,27 @@
+<section id="decision-guide" data-section="guidance" data-transition="fade" style="background:#10161A; color:#E8ECEA; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+  <h2 style="font-size:60px; font-weight:700; letter-spacing:-1px">Which one to reach for</h2>
+  <div style="display:flex; gap:32px; flex:1">
+    <div style="flex:1; display:flex; flex-direction:column; gap:24px; background:#1A2328; border:2px solid #4C8EFF; border-radius:24px; padding:48px">
+      <p style="font-size:32px; font-weight:600; color:#8FC0FF">Use YOLO26 + ByteTrack when —</p>
+      <div style="display:flex; flex-direction:column; gap:20px; flex:1">
+        <div style="display:flex; gap:16px; align-items:flex-start"><x-icon name="CheckCircle" style="color:#4C8EFF; width:28px; height:28px"></x-icon><p style="font-size:27px; line-height:1.4">the target can leave the frame and come back</p></div>
+        <div style="display:flex; gap:16px; align-items:flex-start"><x-icon name="CheckCircle" style="color:#4C8EFF; width:28px; height:28px"></x-icon><p style="font-size:27px; line-height:1.4">similar objects are nearby — you need to filter by class</p></div>
+        <div style="display:flex; gap:16px; align-items:flex-start"><x-icon name="CheckCircle" style="color:#4C8EFF; width:28px; height:28px"></x-icon><p style="font-size:27px; line-height:1.4">the footage runs minutes, not seconds</p></div>
+        <div style="display:flex; gap:16px; align-items:flex-start"><x-icon name="CheckCircle" style="color:#4C8EFF; width:28px; height:28px"></x-icon><p style="font-size:27px; line-height:1.4">an ID, speed and a trail matter more than an exact outline</p></div>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:24px; background:#1A2328; border:2px solid #F2924B; border-radius:24px; padding:48px">
+      <p style="font-size:32px; font-weight:600; color:#F9C296">Use SiamMask when —</p>
+      <div style="display:flex; flex-direction:column; gap:20px; flex:1">
+        <div style="display:flex; gap:16px; align-items:flex-start"><x-icon name="CheckCircle" style="color:#F2924B; width:28px; height:28px"></x-icon><p style="font-size:27px; line-height:1.4">the target stays visible for the stretch that matters</p></div>
+        <div style="display:flex; gap:16px; align-items:flex-start"><x-icon name="CheckCircle" style="color:#F2924B; width:28px; height:28px"></x-icon><p style="font-size:27px; line-height:1.4">you need a precise outline, not just a box</p></div>
+        <div style="display:flex; gap:16px; align-items:flex-start"><x-icon name="CheckCircle" style="color:#F2924B; width:28px; height:28px"></x-icon><p style="font-size:27px; line-height:1.4">the target isn't a class any detector was trained on</p></div>
+        <div style="display:flex; gap:16px; align-items:flex-start"><x-icon name="CheckCircle" style="color:#F2924B; width:28px; height:28px"></x-icon><p style="font-size:27px; line-height:1.4">it's a short, close, single-subject follow shot</p></div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; gap:16px; align-items:center; background:#1A2328; border-radius:16px; padding:28px 40px">
+    <x-icon name="Link" style="color:#38D68C; width:28px; height:28px"></x-icon>
+    <p style="font-size:26px; color:#BFC9C7">Need both — mask-quality following <i>and</i> recovery after a loss? That pairing already exists. Next slide.</p>
+  </div>
+</section>
